@@ -19,7 +19,6 @@ with open("input.txt") as fh:
         line = line.strip()
         number = int(line)
 
-        print(window)
         if int(line_num) >= 25:
             if not check_stuff(number):
                 print(number)
