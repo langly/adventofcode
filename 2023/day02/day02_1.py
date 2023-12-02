@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import re
+from functools import reduce
 
 reLine = re.compile("Game (\d+):(.*)")
 
@@ -24,7 +25,6 @@ def is_legal_game(r):
 
     return (r,g,b)
 
-from functools import reduce
 
 with open("input.txt") as fh:
     sum =0
